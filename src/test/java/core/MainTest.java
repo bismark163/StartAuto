@@ -1,3 +1,7 @@
+package core;
+
+import core.AuthRequest;
+import core.Response;
 import core.User;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,9 +20,11 @@ public class MainTest {
 
     @Test
     public void testA() {
-        this.driver.get(
-                User.getInstace().getUrl()
-        );
+        Request regReq = new RegistrationRequest()
+                .addBody("Body")
+                .addHeader("header")
+                .addUserAgent("user")
+                .load();
     }
 
     @AfterClass
