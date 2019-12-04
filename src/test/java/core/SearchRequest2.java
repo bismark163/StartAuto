@@ -1,6 +1,6 @@
 package core;
 
-public class SearchRequest2 extends Request2 {
+public class SearchRequest2 extends SearchRequest {
     private String header;
     private String userAgent;
     private String body;
@@ -32,7 +32,7 @@ public class SearchRequest2 extends Request2 {
         return this;
     }
 
-    public Request2 load() {
+    public Request load() {
         return new SearchRequest2();
     }
 

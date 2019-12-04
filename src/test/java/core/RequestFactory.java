@@ -21,7 +21,7 @@ public class RequestFactory {
         } else if (version.equals("2")){
             return new Request2();
         } else {
-            throw new IllegalAccessError("Cannot uderstand this version");
+            throw new IllegalAccessError("Dont know this version" + version);
         }
     }
 }

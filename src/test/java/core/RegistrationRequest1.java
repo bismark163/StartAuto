@@ -1,6 +1,6 @@
 package core;
 
-public class AuthRequest2 extends AuthRequest {
+public class RegistrationRequest1 extends RegistrationRequest {
     private String header;
     private String userAgent;
     private String body;
@@ -17,23 +17,23 @@ public class AuthRequest2 extends AuthRequest {
         return body;
     }
 
-    public AuthRequest2 addHeader (String header) {
+    public RegistrationRequest1 addHeader (String header) {
         this.header = header;
         return this;
     }
 
-    public AuthRequest2 addBody (String body) {
+    public RegistrationRequest1 addBody (String body) {
         this.body = body;
         return this;
     }
 
-    public AuthRequest2 addUserAgent (String userAgent) {
+    public RegistrationRequest1 addUserAgent (String userAgent) {
         this.userAgent = userAgent;
         return this;
     }
 
     public Request load() {
-        return new AuthRequest2();
+        return new RegistrationRequest1();
     }
 
 

@@ -1,6 +1,6 @@
 package core;
 
-public class RegistrationRequest2 extends Request2 {
+public class RegistrationRequest2 extends RegistrationRequest {
     private String header;
     private String userAgent;
     private String body;
@@ -32,7 +32,7 @@ public class RegistrationRequest2 extends Request2 {
         return this;
     }
 
-    public Request2 load() {
+    public Request load() {
         return new RegistrationRequest2();
     }
 
