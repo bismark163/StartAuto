@@ -32,9 +32,9 @@ public class SearchRequest extends Request {
         return this;
     }
 
-    public Request load() {
-        return new SearchRequest();
+    public SearchRequest load() {
+        SearchRequest SearchRequestObject = new SearchFactory().getVersion();
+        return SearchRequestObject;
     }
-
 
 }

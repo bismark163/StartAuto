@@ -32,7 +32,7 @@ public class SearchRequest2 extends SearchRequest {
         return this;
     }
 
-    public Request load() {
+    public SearchRequest2 load() {
         return new SearchRequest2();
     }
 

@@ -32,7 +32,7 @@ public class RegistrationRequest2 extends RegistrationRequest {
         return this;
     }
 
-    public Request load() {
+    public RegistrationRequest2 load() {
         return new RegistrationRequest2();
     }
 

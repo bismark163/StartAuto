@@ -1,10 +1,5 @@
 package core;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class MainTest {
@@ -13,9 +8,22 @@ public class MainTest {
     public void testA() {
         Request regReq = new AuthRequest()
                 .addBody("wdwd")
-                .addHeader("wdwd")
+                .addHeader("HEADER FROM TEST")
                 .addUserAgent("dwdw")
                 .load();
+
+        System.out.println(regReq.getBody());
+    }
+
+    @Test
+    public void testB() {
+        Request regReq = new RegistrationRequest()
+                .addBody("qwfffff")
+                .addHeader("Hbbbbbbb")
+                .addUserAgent("zzzzzzzzzzzzz")
+                .load();
+
+        System.out.println(regReq.getBody());
     }
 
 }

@@ -17,24 +17,19 @@ public class AuthRequest2 extends AuthRequest {
         return body;
     }
 
-    public AuthRequest2 addHeader (String header) {
+    public AuthRequest2 addHeader(String header) {
         this.header = header;
         return this;
     }
 
-    public AuthRequest2 addBody (String body) {
+    public AuthRequest2 addBody(String body) {
         this.body = body;
         return this;
     }
 
-    public AuthRequest2 addUserAgent (String userAgent) {
+    public AuthRequest2 addUserAgent(String userAgent) {
         this.userAgent = userAgent;
         return this;
     }
-
-    public Request load() {
-        return new AuthRequest2();
-    }
-
 
 }

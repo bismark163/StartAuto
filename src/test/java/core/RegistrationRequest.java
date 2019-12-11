@@ -32,8 +32,9 @@ public class RegistrationRequest extends Request {
         return this;
     }
 
-    public Request load() {
-        return new RegistrationRequest();
+    public RegistrationRequest load() {
+        RegistrationRequest RegistrationRequestObject = new RegistrationRequestFactory().getVersion();
+        return RegistrationRequestObject;
     }
 
 

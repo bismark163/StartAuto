@@ -17,23 +17,24 @@ public class AuthRequest extends Request {
         return body;
     }
 
-    public AuthRequest addHeader (String header) {
+    public AuthRequest addHeader(String header) {
         this.header = header;
         return this;
     }
 
-    public AuthRequest addBody (String body) {
+    public AuthRequest addBody(String body) {
         this.body = body;
         return this;
     }
 
-    public AuthRequest addUserAgent (String userAgent) {
+    public AuthRequest addUserAgent(String userAgent) {
         this.userAgent = userAgent;
         return this;
     }
 
-    public Request load() {
-        return new AuthRequest();
+    public AuthRequest load() {
+        AuthRequest AuthRequestObject = new AuthRequestFactory().getVersion();
+        return AuthRequestObject;
     }
 
 
